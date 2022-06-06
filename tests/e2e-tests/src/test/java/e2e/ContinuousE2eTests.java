@@ -12,18 +12,6 @@ public class ContinuousE2eTests {
 
     @Test
     void testGetAllMoviesE2e() {
-        //act
-        MovieDTO[] list =
-                given()
-                        .accept(ContentType.JSON)
-                        .contentType(ContentType.JSON).
-                        when()
-                        .get("/movies").
-                        then()
-                        .statusCode(HttpStatus.SC_OK)
-                        .extract().body().as(MovieDTO[].class);
-
-        //assert
-        assertNotNull(list);
+        // cole aqui o código
     }
 }

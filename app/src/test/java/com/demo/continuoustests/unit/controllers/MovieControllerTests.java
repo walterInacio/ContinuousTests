@@ -46,14 +46,6 @@ public class MovieControllerTests {
     @DisplayName("Controller - Get All Movies")
     @Test
     void testGetAllMovies() {
-        //prepare
-        Mockito.when(moviesRepository.findAll()).thenReturn(movies);
-        Mockito.when(moviesService.getAllMovies()).thenReturn(movies);
-
-        //act
-        ResponseEntity<List<Movie>> movieList = moviesController.getAllMovies();
-
-        //assert
-        Assertions.assertEquals(movies, movieList.getBody());
+        // cole aqui o código
     }
 }

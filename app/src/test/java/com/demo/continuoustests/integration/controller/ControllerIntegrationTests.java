@@ -37,24 +37,6 @@ public class ControllerIntegrationTests {
 
     @Test
     void testGetAllMoviesControllerService() {
-
-        //prepare
-        Movie morbius = MockFactoryMovies.generateMovie("Morbius", "Marvel's movie");
-        List<Movie> movies = new ArrayList<>(List.of(morbius));
-        Mockito.when(repository.findAll()).thenReturn(movies);
-
-        //act
-        Movie[] list =
-                given()
-                    .accept(ContentType.JSON)
-                    .contentType(ContentType.JSON).
-                when()
-                    .get("/movies").
-                then()
-                    .statusCode(HttpStatus.OK.value())
-                    .extract().body().as(new TypeRef<>() {});
-
-        //assert
-        assertNotNull(list);
+        // cole aqui o código
     }
 }
