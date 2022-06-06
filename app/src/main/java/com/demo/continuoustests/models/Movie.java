@@ -5,7 +5,7 @@ import lombok.*;
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Builder(toBuilder = true)
+@Builder
 @Getter
 @Setter
 @AllArgsConstructor
@@ -14,8 +14,10 @@ import java.io.Serializable;
 @Table(name = "movie")
 public class Movie implements Serializable {
 
-    @EmbeddedId
-    private MovieId id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
+    private Long id;
 
     @Column(name = "name")
     private String name;
