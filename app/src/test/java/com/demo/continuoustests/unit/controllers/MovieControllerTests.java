@@ -1,5 +1,6 @@
 package com.demo.continuoustests.unit.controllers;
 
+import com.demo.continuoustests.controllers.MoviesController;
 import com.demo.continuoustests.models.Movie;
 import com.demo.continuoustests.repositories.MoviesRepository;
 import com.demo.continuoustests.services.MoviesService;
@@ -12,6 +13,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.ResponseEntity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,8 +25,11 @@ public class MovieControllerTests {
     @Mock
     private MoviesRepository moviesRepository;
 
-    @InjectMocks
+    @Mock
     private MoviesService moviesService;
+
+    @InjectMocks
+    private MoviesController moviesController;
 
     private static List<Movie> movies;
 
@@ -43,11 +48,12 @@ public class MovieControllerTests {
     void testGetAllMovies() {
         //prepare
         Mockito.when(moviesRepository.findAll()).thenReturn(movies);
+        Mockito.when(moviesService.getAllMovies()).thenReturn(movies);
 
         //act
-        List<Movie> movieList = moviesService.getAllMovies();
+        ResponseEntity<List<Movie>> movieList = moviesController.getAllMovies();
 
         //assert
-        Assertions.assertEquals(movies, movieList);
+        Assertions.assertEquals(movies, movieList.getBody());
     }
 }
