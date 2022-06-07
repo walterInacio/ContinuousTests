@@ -6,7 +6,7 @@ This projects was created to show step-by-step of how to implement a pyramid of 
 
 ## Requirements
 
-- JAVA 8 +
+- JAVA 11 +
 
 ## How to Install and Run
 
