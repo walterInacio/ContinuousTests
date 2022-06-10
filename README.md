@@ -6,7 +6,7 @@ This projects was created to show step-by-step of how to implement a pyramid of 
 
 ## Requirements
 
-- JAVA 11 +
+- JAVA 18 (Oracle OpenJDK)
 
 ## How to Install and Run
 
