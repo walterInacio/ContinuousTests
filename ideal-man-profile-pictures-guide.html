@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ideal Way to Take Men's Profile Pictures — Complete Guide</title>
+    <style>
+        :root {
+            --primary: #1a1a2e;
+            --secondary: #16213e;
+            --accent: #0f3460;
+            --highlight: #e94560;
+            --light: #f5f5f5;
+            --text: #333;
+            --text-light: #666;
+            --card-bg: #fff;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--light);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 50%, var(--highlight) 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .hero .subtitle {
+            font-size: 0.95rem;
+            margin-top: 12px;
+            opacity: 0.7;
+            font-style: italic;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Section */
+        section {
+            padding: 60px 0;
+        }
+        section h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 12px;
+            position: relative;
+            display: inline-block;
+        }
+        section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--highlight);
+            margin-top: 8px;
+            border-radius: 2px;
+        }
+        section .section-intro {
+            color: var(--text-light);
+            font-size: 1.05rem;
+            margin-bottom: 36px;
+            max-width: 800px;
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 28px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+        }
+
+        .card-visual {
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-body {
+            padding: 24px;
+        }
+        .card-body h3 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+        .card-body p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+        .card-body .tag {
+            display: inline-block;
+            background: var(--highlight);
+            color: white;
+            font-size: 0.75rem;
+            padding: 3px 10px;
+            border-radius: 12px;
+            margin-top: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Visual Illustration Styles */
+        .vis-golden-hour {
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+        }
+        .vis-golden-hour::after {
+            content: '☀️';
+            font-size: 80px;
+            opacity: 0.6;
+        }
+
+        .vis-45-angle {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .vis-45-angle .angle-indicator {
+            width: 120px;
+            height: 120px;
+            border: 4px solid rgba(255,255,255,0.6);
+            border-radius: 50%;
+            position: relative;
+        }
+        .vis-45-angle .angle-indicator::after {
+            content: '45°';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .vis-45-angle .angle-indicator::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 60px;
+            height: 3px;
+            background: white;
+            transform-origin: left center;
+            transform: rotate(-45deg);
+        }
+
+        .vis-jawline {
+            background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+        }
+        .vis-jawline .face-outline {
+            width: 100px;
+            height: 130px;
+            border: 3px solid rgba(255,255,255,0.7);
+            border-radius: 50% 50% 45% 45%;
+            position: relative;
+        }
+        .vis-jawline .face-outline::after {
+            content: '📐';
+            position: absolute;
+            bottom: -10px;
+            right: -20px;
+            font-size: 30px;
+        }
+
+        .vis-natural-bg {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        }
+        .vis-natural-bg::after {
+            content: '🌿';
+            font-size: 80px;
+            opacity: 0.5;
+        }
+
+        .vis-urban {
+            background: linear-gradient(135deg, #434343 0%, #000000 100%);
+        }
+        .vis-urban::after {
+            content: '🏙️';
+            font-size: 80px;
+            opacity: 0.5;
+        }
+
+        .vis-confident {
+            background: linear-gradient(135deg, #c94b4b 0%, #4b134f 100%);
+        }
+        .vis-confident::after {
+            content: '💪';
+            font-size: 80px;
+            opacity: 0.5;
+        }
+
+        .vis-soft-light {
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+        }
+        .vis-soft-light::after {
+            content: '💡';
+            font-size: 80px;
+            opacity: 0.5;
+        }
+
+        .vis-minimal {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .vis-minimal::after {
+            content: '⬜';
+            font-size: 80px;
+            opacity: 0.3;
+        }
+
+        .vis-candid {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+        }
+        .vis-candid::after {
+            content: '📸';
+            font-size: 80px;
+            opacity: 0.5;
+        }
+
+        .vis-headshot {
+            background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+        }
+        .vis-headshot::after {
+            content: '🎯';
+            font-size: 80px;
+            opacity: 0.5;
+        }
+
+        /* Tip Boxes */
+        .tip-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 20px;
+        }
+        .tip-box {
+            background: white;
+            border-left: 5px solid var(--highlight);
+            padding: 24px;
+            border-radius: 0 12px 12px 0;
+            box-shadow: var(--shadow);
+        }
+        .tip-box h4 {
+            color: var(--primary);
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+        .tip-box p {
+            color: var(--text-light);
+            font-size: 0.93rem;
+        }
+
+        /* Numbered List */
+        .numbered-steps {
+            counter-reset: step;
+            list-style: none;
+            padding: 0;
+        }
+        .numbered-steps li {
+            counter-increment: step;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .numbered-steps li::before {
+            content: counter(step);
+            background: var(--highlight);
+            color: white;
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        .numbered-steps li div h4 {
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+        .numbered-steps li div p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        .comparison-table th {
+            background: var(--primary);
+            color: white;
+            padding: 16px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .comparison-table td {
+            padding: 14px 16px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.95rem;
+        }
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        .comparison-table .do { color: #27ae60; font-weight: 600; }
+        .comparison-table .dont { color: #e74c3c; font-weight: 600; }
+
+        /* Image Reference Section */
+        .image-references {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 24px;
+        }
+        .img-ref {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        .img-ref .img-placeholder {
+            height: 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .img-ref .img-placeholder .style-icon {
+            font-size: 64px;
+            margin-bottom: 12px;
+        }
+        .img-ref .img-placeholder .style-label {
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .img-ref .img-placeholder .style-desc {
+            font-size: 0.85rem;
+            margin-top: 6px;
+            opacity: 0.8;
+        }
+        .img-ref .img-details {
+            padding: 20px;
+        }
+        .img-ref .img-details h4 {
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+        .img-ref .img-details p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        .img-ref .img-details .platforms {
+            margin-top: 10px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .img-ref .img-details .platforms span {
+            background: #f0f0f0;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.78rem;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .style-1 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .style-2 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .style-3 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        .style-4 { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+        .style-5 { background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); }
+        .style-6 { background: linear-gradient(135deg, #fccb90 0%, #d57eeb 100%); }
+        .style-7 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .style-8 { background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+        .cta-section h2 {
+            color: white;
+            font-size: 2rem;
+        }
+        .cta-section h2::after {
+            background: var(--highlight);
+            margin: 8px auto 0;
+        }
+        .cta-section p {
+            max-width: 600px;
+            margin: 16px auto 0;
+            opacity: 0.85;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: rgba(255,255,255,0.6);
+            text-align: center;
+            padding: 30px;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .cards-grid { grid-template-columns: 1fr; }
+            .image-references { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<header class="hero">
+    <h1>The Ideal Way to Take Men's Profile Pictures</h1>
+    <p>A comprehensive guide based on trending Instagram styles, professional photography techniques, and social media best practices for 2024-2026.</p>
+    <p class="subtitle">Compiled from popular Instagram photography accounts, portrait photographers, and social media trend analysis</p>
+</header>
+
+<!-- Section 1: Key Principles -->
+<section>
+    <div class="container">
+        <h2>Key Principles</h2>
+        <p class="section-intro">These are the foundational rules that top Instagram influencers, photographers, and dating profile experts consistently recommend for men's profile photos.</p>
+
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-visual vis-golden-hour"></div>
+                <div class="card-body">
+                    <h3>Golden Hour Lighting</h3>
+                    <p>The #1 most recommended tip across Instagram photography accounts. Shoot during the first or last hour of sunlight for warm, soft, flattering light that naturally enhances skin tone and reduces harsh shadows. This is the single biggest improvement most men can make.</p>
+                    <span class="tag">Most Popular</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-visual vis-45-angle">
+                    <div class="angle-indicator"></div>
+                </div>
+                <div class="card-body">
+                    <h3>The 45-Degree Angle</h3>
+                    <p>Position your face at roughly 45 degrees to the camera rather than straight-on. This is the most universally flattering angle for men — it adds depth, shows facial structure, and creates a more dynamic, engaging look. Slightly turn your chin down.</p>
+                    <span class="tag">Essential</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-visual vis-jawline">
+                    <div class="face-outline"></div>
+                </div>
+                <div class="card-body">
+                    <h3>Define the Jawline</h3>
+                    <p>Push your forehead slightly toward the camera and bring your chin down. This technique, called "the turtle" by photographer Peter Hurley, sharpens the jawline and eliminates double chin. Trending heavily on Instagram reels and TikTok photography tips.</p>
+                    <span class="tag">Pro Technique</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-visual vis-natural-bg"></div>
+                <div class="card-body">
+                    <h3>Natural Backgrounds</h3>
+                    <p>Clean, uncluttered backgrounds — greenery, architectural walls, open sky — are consistently rated as more attractive. Parks, rooftops, and simple urban walls are top choices on Instagram. Avoid cluttered rooms or messy spaces.</p>
+                    <span class="tag">Background</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-visual vis-confident"></div>
+                <div class="card-body">
+                    <h3>Confident, Genuine Expression</h3>
+                    <p>Research from PhotoFeeler and multiple studies show: a slight, natural smile with eye contact rates highest for attractiveness and trustworthiness. Avoid forced grins or overly serious "model" faces. Think of something that genuinely amuses you.</p>
+                    <span class="tag">Expression</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-visual vis-soft-light"></div>
+                <div class="card-body">
+                    <h3>Soft, Diffused Light</h3>
+                    <p>If you can't shoot at golden hour, use overcast days (nature's softbox), window light, or open shade. Avoid direct overhead sun (creates raccoon eyes) and on-camera flash (creates flat, unflattering light).</p>
+                    <span class="tag">Lighting</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 2: Most Popular Instagram Styles -->
+<section style="background: #f0f2f5;">
+    <div class="container">
+        <h2>Trending Instagram Profile Styles for Men (2024-2026)</h2>
+        <p class="section-intro">These are the eight most popular profile picture styles currently trending on Instagram, based on analysis of top-performing posts and influencer accounts.</p>
+
+        <div class="image-references">
+
+            <!-- Style 1 -->
+            <div class="img-ref">
+                <div class="img-placeholder style-8">
+                    <div class="style-icon">👤</div>
+                    <div class="style-label">Classic Headshot</div>
+                    <div class="style-desc">Clean, professional, timeless</div>
+                </div>
+                <div class="img-details">
+                    <h4>Style 1: The Classic Professional Headshot</h4>
+                    <p><strong>Setup:</strong> Head and shoulders framing, soft directional light from a window or reflector, neutral or dark solid background. Slight smile, direct eye contact. Well-groomed, wearing a collared shirt or blazer.</p>
+                    <p><strong>Why it works:</strong> Conveys confidence, professionalism, and approachability. The go-to style for LinkedIn, business Instagram accounts, and anyone wanting to project authority.</p>
+                    <p><strong>Examples:</strong> Think of how Ryan Reynolds, Chris Hemsworth, or Idris Elba appear in professional promotional shots — clean, well-lit, friendly.</p>
+                    <div class="platforms">
+                        <span>LinkedIn</span>
+                        <span>Instagram</span>
+                        <span>Twitter/X</span>
+                        <span>Professional</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Style 2 -->
+            <div class="img-ref">
+                <div class="img-placeholder style-4">
+                    <div class="style-icon">🌅</div>
+                    <div class="style-label">Golden Hour Outdoor</div>
+                    <div class="style-desc">Warm, natural, aspirational</div>
+                </div>
+                <div class="img-details">
+                    <h4>Style 2: Golden Hour Outdoor Portrait</h4>
+                    <p><strong>Setup:</strong> Shot outdoors 30-60 minutes before sunset. Face the sun (or have it at 45 degrees). Upper body framing, natural environment — fields, beaches, city skylines in background. Relaxed posture, genuine expression.</p>
+                    <p><strong>Why it works:</strong> The warm, golden light is universally flattering. This style consistently gets the highest engagement on Instagram. It communicates adventure, warmth, and authenticity.</p>
+                    <p><strong>Examples:</strong> The style popularized by travel influencers and lifestyle accounts. Sun-kissed skin, bokeh background, warm color tones throughout.</p>
+                    <div class="platforms">
+                        <span>Instagram</span>
+                        <span>Tinder/Hinge</span>
+                        <span>Facebook</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Style 3 -->
+            <div class="img-ref">
+                <div class="img-placeholder style-7">
+                    <div class="style-icon">🏙️</div>
+                    <div class="style-label">Urban / Street Style</div>
+                    <div class="style-desc">Edgy, modern, stylish</div>
+                </div>
+                <div class="img-details">
+                    <h4>Style 3: Urban Street Style</h4>
+                    <p><strong>Setup:</strong> City environment — brick walls, graffiti, modern architecture, or neon lights. Standing or leaning casually. Fashionable outfit. Shot from slightly below eye level to add stature. Often in black and white or muted tones.</p>
+                    <p><strong>Why it works:</strong> Communicates style, sophistication, and cultural awareness. Very popular among fashion and lifestyle influencers on Instagram. The urban backdrop adds visual interest without being distracting.</p>
+                    <p><strong>Examples:</strong> Think of GQ magazine street style photography — relaxed confidence in an urban setting, fashion-forward but not trying too hard.</p>
+                    <div class="platforms">
+                        <span>Instagram</span>
+                        <span>TikTok</span>
+                        <span>Fashion</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Style 4 -->
+            <div class="img-ref">
+                <div class="img-placeholder style-3">
+                    <div class="style-icon">🌿</div>
+                    <div class="style-label">Nature / Adventure</div>
+                    <div class="style-desc">Active, outdoorsy, authentic</div>
+                </div>
+                <div class="img-details">
+                    <h4>Style 4: Nature & Adventure Shot</h4>
+                    <p><strong>Setup:</strong> Mountains, forests, lakes, hiking trails. Candid or semi-candid (looking off-camera). Active wear or casual outdoor clothing. Wider framing showing environment. Natural lighting.</p>
+                    <p><strong>Why it works:</strong> Signals an active, adventurous lifestyle. Research from dating apps shows outdoor activity photos are among the top-performing for men. Communicates health, vitality, and interesting hobbies.</p>
+                    <p><strong>Examples:</strong> The "looking out at the view" shot, the hiking trail candid, the lakeside portrait — all massively popular on adventure and travel Instagram accounts.</p>
+                    <div class="platforms">
+                        <span>Dating Apps</span>
+                        <span>Instagram</span>
+                        <span>Facebook</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Style 5 -->
+            <div class="img-ref">
+                <div class="img-placeholder style-1">
+                    <div class="style-icon">😄</div>
+                    <div class="style-label">Candid Laugh</div>
+                    <div class="style-desc">Genuine, warm, approachable</div>
+                </div>
+                <div class="img-details">
+                    <h4>Style 5: The Genuine Candid Laugh</h4>
+                    <p><strong>Setup:</strong> Captured mid-laugh or genuine smile, often looking slightly away from camera. Soft, natural light. Any clean background. The key is authenticity — have someone tell you a joke or recall a funny memory while the photographer shoots continuously.</p>
+                    <p><strong>Why it works:</strong> Studies consistently show genuine smiling photos are rated as more attractive and trustworthy. This style is hugely popular on dating app profiles and personal Instagram accounts because it feels real and approachable.</p>
+                    <p><strong>Examples:</strong> Think candid behind-the-scenes celebrity photos — the unguarded, joyful moment that feels more real than a posed shot.</p>
+                    <div class="platforms">
+                        <span>Dating Apps</span>
+                        <span>Instagram</span>
+                        <span>WhatsApp</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Style 6 -->
+            <div class="img-ref">
+                <div class="img-placeholder style-2">
+                    <div class="style-icon">🎨</div>
+                    <div class="style-label">Minimalist Studio</div>
+                    <div class="style-desc">Clean, modern, striking</div>
+                </div>
+                <div class="img-details">
+                    <h4>Style 6: Minimalist Studio Portrait</h4>
+                    <p><strong>Setup:</strong> Single-color backdrop (grey, white, or dark blue). Controlled studio lighting with one main light and a fill. Close crop on face or head-and-shoulders. Strong eye contact. Minimal or monochromatic clothing.</p>
+                    <p><strong>Why it works:</strong> The simplicity puts all focus on you. Very popular for personal branding, creative professionals, and standout Instagram profiles. The controlled environment means consistently excellent results.</p>
+                    <p><strong>Examples:</strong> Apple-style portraits, celebrity headshots for magazines, tech founder profile photos — clean, impactful, memorable.</p>
+                    <div class="platforms">
+                        <span>LinkedIn</span>
+                        <span>Instagram</span>
+                        <span>Personal Brand</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Style 7 -->
+            <div class="img-ref">
+                <div class="img-placeholder style-5">
+                    <div class="style-icon">☕</div>
+                    <div class="style-label">Lifestyle Candid</div>
+                    <div class="style-desc">Relaxed, relatable, genuine</div>
+                </div>
+                <div class="img-details">
+                    <h4>Style 7: Lifestyle / Coffee Shop Candid</h4>
+                    <p><strong>Setup:</strong> At a cafe, restaurant, library, or workspace. Natural window light. Reading, working, or enjoying a drink. Semi-candid — aware of camera but doing an activity. Warm, inviting color tones.</p>
+                    <p><strong>Why it works:</strong> This "day in the life" style is extremely popular on Instagram because it's relatable and aspirational at the same time. It tells a story and shows personality beyond just appearance.</p>
+                    <p><strong>Examples:</strong> The "deep in thought at the coffee shop" look, the "working on my laptop with perfect light" shot — staples of Instagram lifestyle content.</p>
+                    <div class="platforms">
+                        <span>Instagram</span>
+                        <span>Dating Apps</span>
+                        <span>Social Media</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Style 8 -->
+            <div class="img-ref">
+                <div class="img-placeholder style-6">
+                    <div class="style-icon">🐕</div>
+                    <div class="style-label">With Pet / Activity</div>
+                    <div class="style-desc">Warm, caring, interesting</div>
+                </div>
+                <div class="img-details">
+                    <h4>Style 8: Activity or Pet Photo</h4>
+                    <p><strong>Setup:</strong> Engaged in a hobby (playing guitar, cooking, sports) or with a pet. Natural lighting, candid feel. The activity or pet adds context and personality. Well-framed with the subject as clear focus.</p>
+                    <p><strong>Why it works:</strong> Dating app data (Hinge, Tinder) consistently shows photos with dogs and hobbies get significantly more engagement. It shows dimension, compassion, and makes you more interesting and approachable.</p>
+                    <p><strong>Examples:</strong> Man with dog at the park, playing guitar on a porch, cooking in a well-lit kitchen — photos that say "this person has a full, interesting life."</p>
+                    <div class="platforms">
+                        <span>Dating Apps</span>
+                        <span>Instagram</span>
+                        <span>Facebook</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Section 3: Step-by-Step Guide -->
+<section>
+    <div class="container">
+        <h2>Step-by-Step: Taking the Perfect Profile Photo</h2>
+        <p class="section-intro">Follow this exact process used by professional portrait photographers and Instagram content creators.</p>
+
+        <ol class="numbered-steps">
+            <li>
+                <div>
+                    <h4>Groom & Prepare</h4>
+                    <p>Get a fresh haircut 3-5 days before (so it settles naturally). Trim or style facial hair. Moisturize your face. Wear clothes that fit well — solid colors (navy, black, white, burgundy) photograph best. Avoid loud patterns or logos.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>Choose Your Time & Location</h4>
+                    <p>Shoot during golden hour (1 hour before sunset) for best results. Pick a location with a clean, uncluttered background. Parks, rooftops, clean walls, or well-lit indoor spaces work great. Scout the spot beforehand if possible.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>Set Up Your Camera/Phone</h4>
+                    <p>Use portrait mode on your smartphone or a DSLR with a 50mm-85mm lens. Set the camera at eye level or slightly above. Use a tripod or have a friend shoot. Enable burst mode to capture many frames. Clean the lens!</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>Position Your Body</h4>
+                    <p>Turn your body 30-45 degrees from the camera. Keep shoulders relaxed and slightly angled. Plant your weight on your back foot. Hands in pockets, crossed arms, or holding something natural. Never face the camera completely square-on.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>Master Your Face Angle</h4>
+                    <p>Push your forehead slightly toward the camera (the "turtle" technique). Bring your chin down slightly. Turn your face 15-45 degrees. Squinch slightly (narrow lower eyelid just a tiny bit). This creates confidence and depth.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>Nail the Expression</h4>
+                    <p>Think of something genuinely funny or someone you care about. Let a natural micro-smile form. Make eye contact with the camera lens. Don't "try" to look attractive — relax and be present. Genuine > posed, always.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>Take LOTS of Photos</h4>
+                    <p>Professional photographers shoot hundreds of frames to get "the one." Shoot in burst mode. Try multiple angles, expressions, and poses. Move around. The more variety, the better your selection will be. Aim for at least 50-100 shots.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h4>Edit Subtly</h4>
+                    <p>Use Lightroom, VSCO, or Snapseed. Slightly increase exposure, add warmth, boost shadows. Apply gentle sharpening. Do NOT over-filter or over-smooth skin. The goal is "enhanced natural" — you should still look like yourself. Popular Instagram presets: warm and airy, moody, clean and bright.</p>
+                </div>
+            </li>
+        </ol>
+    </div>
+</section>
+
+<!-- Section 4: Do's and Don'ts -->
+<section style="background: #f0f2f5;">
+    <div class="container">
+        <h2>Do's and Don'ts</h2>
+        <p class="section-intro">Common mistakes vs. best practices, based on data from Instagram engagement metrics, dating app studies, and professional photographer recommendations.</p>
+
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th class="do">DO This</th>
+                    <th class="dont">DON'T Do This</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="do">✓</span> Use natural light (golden hour, window light, overcast)</td>
+                    <td><span class="dont">✗</span> Use bathroom mirror selfies with flash</td>
+                </tr>
+                <tr>
+                    <td><span class="do">✓</span> Show genuine, relaxed expressions</td>
+                    <td><span class="dont">✗</span> Do the "duck face" or exaggerated tough-guy look</td>
+                </tr>
+                <tr>
+                    <td><span class="do">✓</span> Use the 45-degree face angle</td>
+                    <td><span class="dont">✗</span> Shoot straight-on with no depth or dimension</td>
+                </tr>
+                <tr>
+                    <td><span class="do">✓</span> Wear well-fitting, solid-colored clothes</td>
+                    <td><span class="dont">✗</span> Wear wrinkled, ill-fitting, or overly branded clothes</td>
+                </tr>
+                <tr>
+                    <td><span class="do">✓</span> Show your eyes clearly</td>
+                    <td><span class="dont">✗</span> Hide behind sunglasses or hats in your main photo</td>
+                </tr>
+                <tr>
+                    <td><span class="do">✓</span> Use clean, simple backgrounds</td>
+                    <td><span class="dont">✗</span> Have cluttered, messy, or distracting backgrounds</td>
+                </tr>
+                <tr>
+                    <td><span class="do">✓</span> Have someone else take your photo</td>
+                    <td><span class="dont">✗</span> Use low-angle selfies (creates unflattering perspective)</td>
+                </tr>
+                <tr>
+                    <td><span class="do">✓</span> Edit subtly for color and exposure</td>
+                    <td><span class="dont">✗</span> Over-filter, over-smooth skin, or heavily Photoshop</td>
+                </tr>
+                <tr>
+                    <td><span class="do">✓</span> Include context (hobbies, pets, travel)</td>
+                    <td><span class="dont">✗</span> Only show gym selfies or car photos</td>
+                </tr>
+                <tr>
+                    <td><span class="do">✓</span> Make direct eye contact with the camera</td>
+                    <td><span class="dont">✗</span> Look disinterested, angry, or overly posed</td>
+                </tr>
+                <tr>
+                    <td><span class="do">✓</span> Groom beforehand (hair, skin, facial hair)</td>
+                    <td><span class="dont">✗</span> Skip grooming — it always shows in photos</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- Section 5: Technical Quick Tips -->
+<section>
+    <div class="container">
+        <h2>Technical Quick Tips</h2>
+        <p class="section-intro">Phone and camera settings that make a big difference.</p>
+
+        <div class="tip-grid">
+            <div class="tip-box">
+                <h4>Phone Camera: Use Portrait Mode</h4>
+                <p>Portrait mode on iPhone or Android creates a blurred background (bokeh) that makes you stand out. It mimics the look of a professional DSLR portrait and instantly elevates your photo quality.</p>
+            </div>
+            <div class="tip-box">
+                <h4>Camera Height: Eye Level or Slightly Above</h4>
+                <p>Position the camera at eye level or just 2-3 inches above. This is the most flattering angle — it slims the face and emphasizes the eyes. Never shoot from below (creates a double-chin effect).</p>
+            </div>
+            <div class="tip-box">
+                <h4>Focal Length: 50mm-85mm Equivalent</h4>
+                <p>If using a phone, use the 2x zoom (telephoto lens) rather than the main wide-angle camera. Wide-angle lenses distort facial features, making the nose look larger. Telephoto compresses features naturally.</p>
+            </div>
+            <div class="tip-box">
+                <h4>The Rule of Thirds</h4>
+                <p>Turn on the grid overlay on your phone camera. Place your eyes at the intersection of the top-third gridlines. This creates a naturally balanced, visually pleasing composition used by every professional photographer.</p>
+            </div>
+            <div class="tip-box">
+                <h4>Aspect Ratio: 4:5 for Instagram</h4>
+                <p>Instagram's feed displays 4:5 vertical images the largest. Shoot or crop to this ratio for maximum visual impact on Instagram. For LinkedIn and other platforms, 1:1 square works best.</p>
+            </div>
+            <div class="tip-box">
+                <h4>Editing Apps to Use</h4>
+                <p><strong>Lightroom Mobile</strong> (pro-grade, free), <strong>VSCO</strong> (clean presets), <strong>Snapseed</strong> (powerful & free). For face-specific: <strong>Facetune</strong> (subtle only!). For background removal: <strong>Remove.bg</strong>. These are the tools Instagram creators use.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 6: Platform-Specific Advice -->
+<section style="background: #f0f2f5;">
+    <div class="container">
+        <h2>Platform-Specific Recommendations</h2>
+        <p class="section-intro">Different platforms favor different styles. Here's what works best on each.</p>
+
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-visual" style="background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); font-size: 60px; color: white;">
+                    <span>Instagram</span>
+                </div>
+                <div class="card-body">
+                    <h3>Instagram Profile</h3>
+                    <p>Use a close crop (face + shoulders), bright and warm editing, clear eyes and smile. The profile picture is displayed small and circular, so high contrast and close framing is essential. Popular aesthetic: warm tones, slight grain, natural feel.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-visual" style="background: linear-gradient(135deg, #0077B5, #00a0dc); font-size: 60px; color: white;">
+                    <span>LinkedIn</span>
+                </div>
+                <div class="card-body">
+                    <h3>LinkedIn Professional</h3>
+                    <p>Professional headshot style. Business or smart-casual attire. Friendly but professional expression. Clean background (solid color or office setting). Good lighting. This is the platform where investing in a professional photographer pays off most.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-visual" style="background: linear-gradient(135deg, #FD297B, #FF5864, #FF655B); font-size: 60px; color: white;">
+                    <span>Dating</span>
+                </div>
+                <div class="card-body">
+                    <h3>Tinder / Hinge / Bumble</h3>
+                    <p>Mix of styles is key: lead with a clear face shot (smiling, good light), include a full-body shot, an activity/hobby photo, and a social photo with friends. Data shows: smiling > not smiling, looking away can work, dogs are a major plus, group photos should clearly show which person you are.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 7: Reference Image Descriptions -->
+<section>
+    <div class="container">
+        <h2>Visual Reference Examples</h2>
+        <p class="section-intro">Detailed descriptions of top-performing profile photo styles you can search for and reference on Instagram. Search these hashtags and accounts for visual inspiration.</p>
+
+        <div class="tip-grid">
+            <div class="tip-box">
+                <h4>Search: #MalePortrait #MenPortrait</h4>
+                <p>Classic male portrait photography. You'll find thousands of examples of professional headshots, outdoor portraits, and studio work showing the 45-degree angle, jawline technique, and natural expression in action.</p>
+            </div>
+            <div class="tip-box">
+                <h4>Search: #GoldenHourPortrait</h4>
+                <p>Beautiful examples of warm, sun-kissed portraits. Notice how the light wraps around the face, creates a warm glow on skin, and how the background goes soft and golden. This is the most universally flattering style.</p>
+            </div>
+            <div class="tip-box">
+                <h4>Search: #HeadshotPhotography</h4>
+                <p>Professional headshot photographers showcase their best work here. Study the lighting patterns (Rembrandt, loop, butterfly), expressions, and how they direct the subject's posture and gaze.</p>
+            </div>
+            <div class="tip-box">
+                <h4>Follow: @PeterHurley (Instagram)</h4>
+                <p>The legendary headshot photographer who coined "the squinch" and "the turtle" techniques. His feed is a masterclass in men's portrait photography and facial expression direction.</p>
+            </div>
+            <div class="tip-box">
+                <h4>Search: #PortraitPhotography #PortraitMood</h4>
+                <p>Broader portrait photography communities where you'll find diverse styles — moody, bright, editorial, candid — giving you a wide range of inspiration for different looks and moods.</p>
+            </div>
+            <div class="tip-box">
+                <h4>Follow: @SeanTucker, @JessicaKobeissi</h4>
+                <p>YouTube + Instagram photographers who break down exactly how top-tier portraits are created, including lighting setups, posing guides, and editing walkthroughs specifically for male subjects.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section>
+    <div class="container">
+        <div class="cta-section">
+            <h2>Key Takeaway</h2>
+            <p>The ideal men's profile picture combines <strong>good natural lighting</strong> (golden hour or soft window light), a <strong>45-degree face angle</strong> with jawline definition, a <strong>genuine expression</strong>, and a <strong>clean background</strong>. Master these four elements, and you'll have a profile photo that stands out on any platform.</p>
+            <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.7;">Based on analysis of Instagram trends, professional photography best practices, dating app data, and social media engagement research (2024-2026).</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Men's Profile Picture Guide — Compiled from Instagram trends, professional photography techniques, and social media research.</p>
+    <p style="margin-top: 8px;">Sources: Peter Hurley's headshot methodology, PhotoFeeler attractiveness studies, Hinge/Tinder engagement data, Instagram #PortraitPhotography community.</p>
+</footer>
+
+</body>
+</html>
